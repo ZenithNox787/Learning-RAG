@@ -96,10 +96,11 @@ The retrieved context is passed to a locally running Ollama model.
 Current model:
 
 ```
-qwen2.5-32k
+qwen2.5-32k(1.5-B)
 ```
 
-The model is instructed to answer **only from the retrieved documents**.
+The model is instructed to answer **only from the retrieved documents**.This model is created using MODELFILE not the default qwen2.5-coder-1.5B
+I used 1.5B because my system has only 4GB VRAM and 24GB RAM , I wanted to maximise the context window ,in this case it's 32K
 
 If the answer is not present in the retrieved context, it responds with:
 
@@ -114,8 +115,8 @@ IDK
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/ZenithNox787/Learning-RAG.git
+cd Learning-RAG
 ```
 
 Create a virtual environment
